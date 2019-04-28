@@ -1,0 +1,56 @@
+{
+  "name": "todoify-server",
+  "version": "1.0.0",
+  "description": "todoify server",
+  "author": "Francisco Sales",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 8",
+    "npm": ">= 5"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "graphql",
+    "typescript",
+    "apollo",
+    "apollo-server"
+  ],
+  "scripts": {
+    "start": "nodemon",
+    "dev": "nodemon",
+    "debug": "nodemon"
+  },
+  "dependencies": {
+    "apollo-server": "^2.1.0",
+    "apollo-server-express": "^2.1.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "connection-string": "^1.0.1",
+    "core-js": "^2.5.7",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.5.4",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/express": "^4.16.0",
+    "@types/lodash": "^4.14.117",
+    "@types/mongodb": "^3.1.25",
+    "@types/mongoose": "^5.3.27",
+    "@types/morgan": "^1.7.35",
+    "@types/node": "^10.11.7",
+    "ava": "^0.25.0",
+    "nodemon": "^1.18.9",
+    "prettier": "^1.14.3",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "tslint-plugin-prettier": "^2.0.0",
+    "typescript": "^3.1.3"
+  }
+}
