@@ -4,6 +4,7 @@ import express from 'express';
 import http from 'http';
 import logger from 'morgan';
 import schema from './schema';
+import { resolveAuthContext } from './utils/authMiddleware';
 
 // Creates and configures an ExpressJS web server.
 class Server {
@@ -13,7 +14,7 @@ class Server {
 
   constructor() {
     this.app = express();
-    this.apollo = new ApolloServer({ schema });
+    this.apollo = new ApolloServer({ schema, context: resolveAuthContext });
     this.middleware();
     this.routes();
   }

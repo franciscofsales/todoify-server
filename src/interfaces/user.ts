@@ -7,20 +7,25 @@ export interface IUser {
 }
 
 export interface IUserSignUp {
-  name: string;
-  email: string;
-  password: string;
+  input: {
+    name: string;
+    email: string;
+    password: string;
+  }
 }
 
 export interface IUserAuth {
-  email: string;
-  password: string;
+  input: {
+    email: string;
+    password: string;
+  }
 }
 
 export interface IUserAuthResponse {
   userId: string;
   access: string;
   refresh: string;
+  userName: string;
 }
 
 export interface IUserAuthInterface {

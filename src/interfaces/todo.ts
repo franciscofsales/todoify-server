@@ -3,10 +3,21 @@ export interface ITodo {
   categoryId: string;
   createdAt: Date;
   updatedAt: Date;
+  userId: string;
+  status: string;
 }
 
 export interface ITodoCreate {
-  body: string;
-  categoryId: string;
-  userId: string;
+  input: {
+    body: string;
+    categoryId: string;
+    userId: string;
+  };
+}
+
+export interface ITodoUpdateStatus {
+  input: {
+    todoId: string;
+    status: string;
+  };
 }

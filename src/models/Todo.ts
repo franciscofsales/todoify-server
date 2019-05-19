@@ -13,6 +13,15 @@ const Todo: Schema = new Schema({
     type: Types.ObjectId,
     ref: 'Category',
   },
+  status: {
+    type: String,
+    default: 'TODO',
+    enum: ['TODO', 'COMPLETED', 'ARCHIVED'],
+  },
+  dueDate: {
+    type: Date,
+    default: Date.now,
+  },
   createdAt: {
     type: Date,
     default: Date.now,
