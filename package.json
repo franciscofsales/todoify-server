@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "apollo-server": "^2.1.0",
-    "apollo-server-express": "^2.1.0",
+    "apollo-server-express": "^2.14.2",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "connection-string": "^1.0.1",
